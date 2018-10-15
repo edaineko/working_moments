@@ -1,0 +1,160 @@
+body {
+    background: beige;
+}
+
+.b-light-gallery {
+    margin: 30px 0;
+}
+
+.b-light-gallery__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content
+}
+
+.b-light-gallery__item {
+    width: 100%;
+    position: relative;
+    max-height: 250px;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.b-light-gallery__item-title {
+    position: absolute;
+    left: 2px;
+    bottom: 15px;
+    background: #eaf3f0;
+    width: 160px;
+    min-height: 50px;
+    color: #333333;
+    display: inline-flex;
+    padding: 0 15px;
+    align-items: center;
+    transition: background .3s;
+    backface-visibility: hidden;
+    word-break: break-word;
+}
+
+.b-light-gallery__item-img {
+    max-width: 100%;
+    width: 100%;
+    transition: transform .3s;
+    backface-visibility: hidden;
+}
+
+.b-light-gallery__item-link:hover .b-light-gallery__item-title {
+    background: #fff;
+}
+
+.b-light-gallery__item-link:hover .b-light-gallery__item-img {
+    transform: scale(1.15);
+}
+
+@media (min-width: 480px) {
+    .b-light-gallery__items.is-grid .b-light-gallery__item {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    .b-light-gallery__items.is-grid .b-light-gallery__item {
+        width: 32%;
+    }
+
+    .b-light-gallery__item-title {
+        width: 64%;
+    }
+}
+
+.b-light-gallery__item:hover {
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+}
+
+/*.b-light-gallery__item-title {*/
+    /*left: 0;*/
+/*}*/
+
+.b-main-gallery,
+.b-list-gallery{
+   display: flex;
+    justify-content: center;
+}
+
+.connected-carousels .prev-stage,
+.connected-carousels .next-stage {
+    height: 100%;
+    width: 50%;
+}
+
+.wrapper, html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.connected-carousels .stage {
+    width: 100%;
+    margin: 0;
+}
+
+.connected-carousels .carousel-stage {
+    border: none;
+    height: calc(100vh - 110px);
+}
+
+.connected-carousels .carousel-stage li {
+    position: relative;
+}
+
+.connected-carousels .navigation {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    width:490px;
+}
+
+.carousel-stage img {
+    /*max-width: 100%;*/
+    /*min-height: 100%;*/
+    height: 100%;
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*top: -50%;*/
+    margin: 0 auto;
+    display: block;
+}
+.connected-carousels .prev-stage span, .connected-carousels .next-stage span  {
+    top: unset;
+    bottom: -70px;
+}
+.connected-carousels .prev-stage span,
+.connected-carousels .next-stage span {
+    display: block;
+}
+.connected-carousels .carousel-navigation{
+    background: transparent;
+    border:none;
+    width: 490px;
+    box-shadow:none;
+    height: 100%;
+}
+.connected-carousels .carousel-navigation ul{
+    display: flex;
+    justify-content: center;
+}
+.connected-carousels .carousel-navigation li {
+    /*padding: 0 5px;*/
+}
+
+.connected-carousels .carousel-navigation li img{
+    border: none;
+}
+.connected-carousels .carousel-navigation li.active {
+    border: 2px solid white;
+}
+
+@media screen {
+    
+}
